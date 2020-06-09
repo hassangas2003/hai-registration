@@ -1,0 +1,14 @@
+{"compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "ES5",
+    "lib": [ "ES2018", "DOM" ]
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
