@@ -37,6 +37,11 @@
     .type-text {
         padding: 15px 15px 0px 15px;
     }
+
+    .type-button{
+        position:absolute;
+        bottom:10px;
+    }
 </style>
 <div id="membershipType" v-if="visible == true">
     <!--Organization-->
@@ -56,7 +61,7 @@
                     <div class="type-text">
                         <p>Helicopter Operators</p>
                         <p>Your organization operates one or more helicopters</p>
-                        <button type="button" class="btn btn-primary center-block" >Helicopter Operators</button>
+                        <button type="button" class="btn btn-primary center-block type-button">Helicopter Operators</button>
                     </div>
                 </div>
             </div>
@@ -66,7 +71,7 @@
                     <div class="type-text">
                         <p>Unmanned Aircraft Systems</p>
                         <p>Your organization operates one or more drones</p>
-                        <button type="button" class="btn btn-primary center-block" >Unmanned Aircraft Systems</button>
+                        <button type="button" class="btn btn-primary center-block type-button" >Unmanned Aircraft Systems</button>
                     </div>
                 </div>
             </div>
@@ -76,7 +81,7 @@
                     <div class="type-text">
                         <p>Manufacturers/Suppliers</p>
                         <p>Your organization manufacturers prodcuts, provides products, or services to the vertical lift industry</p>
-                        <button type="button" class="btn btn-primary center-block" >Manufacturers/Suppliers</button>
+                        <button type="button" class="btn btn-primary center-block type-button" >Manufacturers/Suppliers</button>
                     </div>
                 </div>
             </div>

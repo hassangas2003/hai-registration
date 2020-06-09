@@ -18,7 +18,8 @@ var personalInformationApp = new Vue({
                 country: '',
                 email: '',
                 phoneNumber: null
-            }
+            },
+            changeCompanyRadio: null
 
         }
     },
@@ -31,9 +32,16 @@ var personalInformationApp = new Vue({
             this.user = confirmInfoApp.user;
         },
         async updateChanges() {
+            if (this.changeCompanyRadio == 'No') {
             this.visible = false;
             selectMembershipApp.visible = true;
-            selectMembershipApp.useCaseVisible = 'whatTypeOfMembership';
+                selectMembershipApp.useCaseVisible = 'whatTypeOfMembership';
+            }
+            if (this.changeCompanyRadio == 'Yes') {
+                this.visible = false;
+                selectMembershipApp.visible = true;
+                selectMembershipApp.useCaseVisible = 'changeOrganization';
+            }
         }
 
     }

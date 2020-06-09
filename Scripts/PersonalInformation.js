@@ -53,7 +53,8 @@ var personalInformationApp = new Vue({
                 country: '',
                 email: '',
                 phoneNumber: null
-            }
+            },
+            changeCompanyRadio: null
         };
     },
     mounted: function () {
@@ -67,9 +68,16 @@ var personalInformationApp = new Vue({
         updateChanges: function () {
             return __awaiter(this, void 0, void 0, function () {
                 return __generator(this, function (_a) {
-                    this.visible = false;
-                    selectMembershipApp.visible = true;
-                    selectMembershipApp.useCaseVisible = 'whatTypeOfMembership';
+                    if (this.changeCompanyRadio == 'No') {
+                        this.visible = false;
+                        selectMembershipApp.visible = true;
+                        selectMembershipApp.useCaseVisible = 'whatTypeOfMembership';
+                    }
+                    if (this.changeCompanyRadio == 'Yes') {
+                        this.visible = false;
+                        selectMembershipApp.visible = true;
+                        selectMembershipApp.useCaseVisible = 'changeOrganization';
+                    }
                     return [2 /*return*/];
                 });
             });

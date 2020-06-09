@@ -54,14 +54,14 @@ namespace HAI.Modules.HaiRegistrationMockup
                     //Check for existing settings and use those on this page
                     //Settings["SettingName"]
 
-                    /* uncomment to load saved settings in the text boxes
-                    if(Settings.Contains("Setting1"))
+                    //uncomment to load saved settings in the text boxes
+                    if (Settings.Contains("Setting1"))
                         txtSetting1.Text = Settings["Setting1"].ToString();
-			
+
                     if (Settings.Contains("Setting2"))
                         txtSetting2.Text = Settings["Setting2"].ToString();
 
-                    */
+
 
                 }
             }
@@ -84,8 +84,8 @@ namespace HAI.Modules.HaiRegistrationMockup
 
                 //the following are two sample Module Settings, using the text boxes that are commented out in the ASCX file.
                 //module settings
-                //modules.UpdateModuleSetting(ModuleId, "Setting1", txtSetting1.Text);
-                //modules.UpdateModuleSetting(ModuleId, "Setting2", txtSetting2.Text);
+                modules.UpdateModuleSetting(ModuleId, "Setting1", txtSetting1.Text);
+                modules.UpdateModuleSetting(ModuleId, "Setting2", txtSetting2.Text);
 
                 //tab module settings
                 //modules.UpdateTabModuleSetting(TabModuleId, "Setting1",  txtSetting1.Text);

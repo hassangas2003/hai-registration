@@ -112,6 +112,23 @@
             </div>
         </div>
     </div>
+    <!--What type of membership after updating account and organization is correct -->
+    <div v-if="useCaseVisible == 'changeOrganization'">
+        <div class="validate-membership-title">Validate/Update Your Membership</div>
+        <div class="validate-membership-description-box">
+            <p>Search for an existing organization in the HAI Data base or enter company name to create new record.</p>
+        </div>
+        <div>
+            <input type="text" class="form-control" placeholder="Search Organization">
+        </div>
+        <div style="padding-top: 20px">
+            <button type="button" class="btn btn-primary btn-lg">Select this Company</button>
+        </div>
+        <div style="padding-top:20px">
+                <p>Or Choose:</p>
+        </div>
+        <div><button type="button" class="btn btn-default btn-lg">I do not choose to affiliate my record with an organization</button></div>
+    </div>
 </div>
 
 

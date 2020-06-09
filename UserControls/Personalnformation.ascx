@@ -95,19 +95,20 @@
     <div>
         Please select the following:
     </div>
-    <div class="form-inline" style="padding-top:10px;">
+    <div class="form-inline" style="padding-top: 10px;">
         <div class="form-group">
             Do you wish to change your company information?
         </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" value="">Yes</label>
-        </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" value="">No</label>
-        </div>
+        <label class="radio-inline">
+            <input type="radio" name="changeCompanyRadioOptions" id="changeCompanyRadio1" v-model="changeCompanyRadio" value="Yes">
+            Yes
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="changeCompanyRadioOptions" id="changeCompanyRadio2" v-model="changeCompanyRadio" value="No">
+            No
+        </label>
     </div>
+    <br />
     <button class="btn btn-default" type="button" v-on:click="updateChanges">Update Changes</button>
 
 
